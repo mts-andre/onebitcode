@@ -1,0 +1,37 @@
+<!--
+    Escreva um programa que imprima todos os números pares de 1 a 20.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Números pares</title>
+    </head>
+    
+    <body>
+        <script>
+            let numeros = ''
+
+            for(let i = 1; i <= 20; i++){
+                if(i % 2 == 0){
+                    numeros += i + '\n'
+                }
+            }
+
+            console.log(`Números pares: \n${numeros}`)
+
+
+            // ou
+
+            /*
+                for(let i = 1; i <= 20; i++){
+                    if(i % 2 == 0) {
+                        console.log(i)
+                    }
+                }
+            */
+        </script>
+    </body>
+</html>

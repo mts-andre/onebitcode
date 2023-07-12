@@ -1,0 +1,28 @@
+<!--
+    Escreva um programa que imprima os números de 1 a 100, substituindo os múltiplos de 3 pela palavra "Fizz" e os múltiplos de 5 pela palavra "Buzz". Para os números que são múltiplos de ambos, utilize a palavra "FizzBuzz".
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FizzBuzz</title>
+    </head>
+
+    <body>
+        <script>
+            for(let i = 1; i <= 100; i++) {
+                if(i % 3 === 0 && i % 5 === 0) {
+                    console.log('FizzBuzz')
+                } else if(i % 5 === 0) {
+                    console.log('Buzz')
+                } else if(i % 3 === 0) {
+                    console.log('Fizz')
+                } else {
+                    console.log(i)
+                }
+            }
+        </script>
+    </body>
+</html>

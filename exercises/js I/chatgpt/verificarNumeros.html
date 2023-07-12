@@ -1,0 +1,29 @@
+<!--
+    Escreva um programa que verifique se um número é positivo, negativo ou zero. Use um laço do-while para permitir que o usuário insira vários números até digitar 0, encerrando o programa.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Verificar Números</title>
+    </head>
+
+    <body>
+        <script>
+            let numero
+            do {
+                numero = parseInt(prompt('Digite um número:'))
+
+                if(numero > 0) {
+                    console.log('Positivo')
+                } else if(numero < 0) {
+                    console.log('Negativo')
+                } else {
+                    console.log('Zero')
+                }
+            } while(numero != 0)
+        </script>
+    </body>
+</html>
